@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "Shared_lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Shared_lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared_lib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Shared_lib/1.0.0": {
+      "type": "project",
+      "path": "../Shared_lib/Shared_lib.csproj",
+      "msbuildProject": "../Shared_lib/Shared_lib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "Shared_lib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\romzes2006\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Work_Project\\Psihology_Project\\Shared_lib\\Shared_lib.csproj": {
+              "projectPath": "D:\\Work_Project\\Psihology_Project\\Shared_lib\\Shared_lib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "PsihologARM/1.0.0": {
+        "dependencies": {
+          "Shared_lib": "1.0.0"
+        },
         "runtime": {
           "PsihologARM.dll": {}
+        }
+      },
+      "Shared_lib/1.0.0": {
+        "runtime": {
+          "Shared_lib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PsihologARM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared_lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

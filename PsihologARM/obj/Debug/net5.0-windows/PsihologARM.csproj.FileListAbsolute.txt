@@ -25,3 +25,6 @@ D:\Work_Project\Psihology_Project\PsihologARM\obj\Debug\net5.0-windows\PsihologA
 D:\Work_Project\Psihology_Project\PsihologARM\obj\Debug\net5.0-windows\PsihologARM.genruntimeconfig.cache
 D:\Work_Project\Psihology_Project\PsihologARM\bin\Debug\net5.0-windows\aizenc_questions.txt
 D:\Work_Project\Psihology_Project\PsihologARM\bin\Debug\net5.0-windows\questions.txt
+D:\Work_Project\Psihology_Project\PsihologARM\bin\Debug\net5.0-windows\Shared_lib.dll
+D:\Work_Project\Psihology_Project\PsihologARM\bin\Debug\net5.0-windows\Shared_lib.pdb
+D:\Work_Project\Psihology_Project\PsihologARM\obj\Debug\net5.0-windows\PsihologARM.csproj.CopyComplete

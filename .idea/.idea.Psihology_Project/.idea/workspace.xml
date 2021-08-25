@@ -5,66 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d235dcc8-ea03-4c27-8be8-d512350c5c40" name="Changes" comment="Перезалитый проект">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Psihology_Project/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Psihology_Project/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Psihology_Project/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Psihology_Project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Psihology_Project/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Aizenc_test_Interpretation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/App.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/App.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/BasePsihologyInterpretation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Default_Theme.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/MainWindow.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/MainWindow.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/PsihologARM.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/QuestionTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Results_Interpretation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Test_Result_Window.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Test_Result_Window.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/Test_icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/aizenc_questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/aizenc_questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/ref/PsihologARM.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/App.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/Default_Theme.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/MainWindow.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.g.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM_MarkupCompile.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM_MarkupCompile.lref" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/Test_Result_Window.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/Test_Result_Window.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/ref/PsihologARM.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/PsihologARM.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/PsihologARM.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/PsihologARM.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsihologARM/questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Psihology_Project.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/PsihologARM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/PsihologARM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/bin/Debug/net5.0-windows/PsihologARM.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/PsihologARM_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/Test_Result_Window.baml" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/Debug/net5.0-windows/Test_Result_Window.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/PsihologARM.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/PsihologARM.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsihologARM/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PsihologARM/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Psihology_Project.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Psihology_Project.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629879358562</updated>
-      <workItem from="1629879369765" duration="2541000" />
+      <workItem from="1629879369765" duration="2884000" />
     </task>
     <task id="LOCAL-00001" summary="INIT">
       <created>1629882243563</created>
@@ -132,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629882243563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Перезалитый проект">
+      <created>1629882667960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629882667960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

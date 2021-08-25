@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Shared_lib;
 
 namespace PsihologARM
 {
@@ -22,7 +24,7 @@ namespace PsihologARM
     /// </summary>
    public partial class MainWindow : Window
     {
-        public List<QuestionTest> Questions_test_list = new List<QuestionTest>();
+        public ObservableCollection<QuestionTest> Questions_test_list = new ObservableCollection<QuestionTest>();
         public DataTable table_visualed = new DataTable();
         private string selected_test { get; set; }
 
@@ -40,42 +42,7 @@ namespace PsihologARM
             selected_test = "rb_NPU";
         }
 
-        private void _func_Start_Test(string filename)
-        {
-            _func_Read_Test_from_File(filename);
-            for (int j = 0; j < Questions_test_list.Count; j++)
-            {
-                table_visualed.Rows.Add(Questions_test_list[j].number.ToString(),
-                    Questions_test_list[j].question.ToString(), (bool) Questions_test_list[j].answer);
-            }
-
-            tbl_tests.ItemsSource = table_visualed.DefaultView;
-        }
-
-        private void _func_Read_Test_from_File(string filename)
-        {
-            Questions_test_list.Clear();
-            table_visualed.Clear();
-            try
-            {
-                using (var fs_read_sw = new StreamReader(filename))
-                {
-                    int i = 0;
-                    do
-                    {
-                        i++;
-                        Questions_test_list.Add(new QuestionTest((int) i, fs_read_sw.ReadLine(), false));
-                    } while (!fs_read_sw.EndOfStream);
-
-                    fs_read_sw.Close();
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Файл опросника не найден!");
-                //Close();
-            }
-        }
+        
 
         private void Btn_ResultTest_OnClick(object sender, RoutedEventArgs e)
         {
@@ -90,7 +57,7 @@ namespace PsihologARM
             switch (selected_test)
             {
                 case "rb_NPU":
-                   var results_interpretation = new Results_Interpretation(Questions_test_list);
+                   var results_interpretation = new Results_Interpretation(Questions_test_list.ToList());
                     if (!results_interpretation.func_Credibility_test())
                     {
                         MessageBox.Show($"Тест не достоверен");
@@ -145,7 +112,7 @@ namespace PsihologARM
 
                     break;
                 case "rb_Aizenc":
-                    var aizenc_test_interpretation = new Aizenc_test_Interpretation(Questions_test_list);
+                    var aizenc_test_interpretation = new Aizenc_test_Interpretation(Questions_test_list.ToList());
                     int index_Credibility = 4;
                     aizenc_test_interpretation.func_Credibility_test(ref index_Credibility);
                     switch (index_Credibility)
@@ -214,8 +181,18 @@ namespace PsihologARM
                     break;
             }
 
-
-            _func_Start_Test(filename);
+            Questions_test_list.Clear();
+            table_visualed.Clear();
+            try
+            {
+                LoadTests._func_Start_Test(filename, Questions_test_list, table_visualed);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+            
+            tbl_tests.ItemsSource = table_visualed.DefaultView;
         }
     }
 }

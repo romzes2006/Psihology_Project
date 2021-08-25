@@ -1,4 +1,4 @@
-﻿namespace PsihologARM
+﻿namespace Shared_lib
 {
     public class QuestionTest
     {

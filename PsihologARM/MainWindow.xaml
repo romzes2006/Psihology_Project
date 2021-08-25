@@ -1,0 +1,55 @@
+﻿<Window x:Class="PsihologARM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PsihologARM"
+        mc:Ignorable="d"
+        Title="Психологическое тестирование" Height="450" Width="800" MinHeight="450" MinWidth="800"
+        UseLayoutRounding="True" Style="{DynamicResource WindowStyle}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Default_Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="453*" />
+            <ColumnDefinition Width="347*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="1" ShowGridLines="False" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="main_stack_panel" Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+                <Label Content="Выберите тест" Margin="5,0,5,0" />
+                <RadioButton x:Name="rb_NPU" GroupName="TestSelecting" Content="НПУ тест" Margin="5,5,5,0"
+                             IsChecked="True" />
+                <RadioButton x:Name="rb_Aizenc" GroupName="TestSelecting" Content="Тест Айзенка" Margin="5,0,5,5" />
+                <Button x:Name="btn_LoadTest" Content="Запустить тест" Margin="5,5,5,5"
+                        Template="{DynamicResource btTemplate}" Click="Btn_LoadTest_OnClick" />
+                <Button x:Name="btn_ResultTest" Content="Вывести результат теста" Margin="5,5,5,5"
+                        Template="{DynamicResource btTemplate}"
+                        Click="Btn_ResultTest_OnClick" />
+                <Button x:Name="btn_ClearTest" Content="Сбросить" Margin="5,5,5,5" Click="Btn_ClearTest_OnClick"
+                        Template="{DynamicResource btTemplate}" />
+            </StackPanel>
+            <DataGrid x:Name="tbl_tests" Grid.Column="1" Grid.Row="0" />
+
+        </Grid>
+        <Label Content="Многоуровневый личностный опросниик &quot;Адаптивность&quot; " Margin="0,0,0,0"
+               Height="37" Grid.ColumnSpan="2" Style="{DynamicResource Label_Header_style}" />
+    </Grid>
+</Window>

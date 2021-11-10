@@ -20,4 +20,8 @@
       <ProjectReference Include="..\Shared_lib\Shared_lib.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    </ItemGroup>
+
 </Project>

@@ -4,10 +4,271 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:PsihologARM"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Team_climate_frm" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Title="Социально-психологический климат в коллективе" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
         Style="{StaticResource MaterialDesignWindow}">
-    <Grid>
-        
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Default_Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Анкета для исследования социально-психологического климата коллектива" Margin="0,0,0,0"
+                       Height="37" Style="{DynamicResource Label_Header_style}" />
+
+                <GroupBox
+                    Header="Нравится ли вам ваша работа?"
+                    Style="{DynamicResource MaterialDesignGroupBox}"
+                    Margin="16"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                    BorderThickness="0">
+                    <ListBox
+                        Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                        x:Name="rb_liked_work">
+                        <ListBoxItem
+                            Content="Очень нравится" />
+                        <ListBoxItem
+                            IsSelected="True"
+                            Content="Пожалуй нравится" />
+                        <ListBoxItem
+                            Content="Работа мне безразлична" />
+                        <ListBoxItem
+                            Content="Пожалуй не нравится" />
+                        <ListBoxItem
+                            Content="Очень не нравится" />
+                    </ListBox>
+                </GroupBox>
+                <GroupBox
+                    Header="Хотели бы вы перейти на другую работу?"
+                    Style="{DynamicResource MaterialDesignGroupBox}"
+                    Margin="16"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                    BorderThickness="0">
+                    <ListBox
+                        Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                        x:Name="rb_other_work">
+                        <ListBoxItem
+                            Content="Да" />
+                        <ListBoxItem
+                            IsSelected="True"
+                            Content="Нет" />
+                        <ListBoxItem
+                            Content="Не знаю" />
+                    </ListBox>
+                </GroupBox>
+                <GroupBox x:Name="GB_working_ecellence"
+                          Header="Насколько хорошо, по вашему мнению, организована ваша работа?"
+                          Style="{DynamicResource MaterialDesignGroupBox}"
+                          Margin="16"
+                          materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                          BorderThickness="0">
+                    <StackPanel Orientation="Vertical">
+                        <RadioButton
+                            Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
+                            IsChecked="True"
+                            GroupName="GB_working_ecellence"
+                            Content="Работа организована очень хорошо" />
+                        <RadioButton
+                            Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
+                            GroupName="GB_working_ecellence"
+                            Content="В общем не плохо, хотя есть возможность улучшения" />
+                        <RadioButton
+                            Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
+                            GroupName="GB_working_ecellence"
+                            Content="Затрудняюсь ответить" />
+                        <RadioButton
+                            Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
+                            GroupName="GB_working_ecellence"
+                            Content="Работа организована удовлетворительно, много времени расходуется впустую" />
+                        <RadioButton
+                            Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
+                            GroupName="GB_working_ecellence"
+                            Content="Работа организована очень плохо" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox
+                    Header="Укажите, в какой степени вы удовлетворены условиями вашей работы?"
+                    Style="{DynamicResource MaterialDesignGroupBox}"
+                    Margin="16"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                    BorderThickness="0">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="1. Размер заработной платы" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkZp">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="2. Социальный пакет" VerticalContentAlignment="Center" FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkSocialPackage">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="3. Санитарно-гигиенические условия" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkSanitaryAndHygienicConditions">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="4. Отношения с непосредственным руководителем"
+                                   VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkRelationshipWithTheImmediateSupervisor">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="5. Отношения в трудовом коллективе" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkEmployeeRelations">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="6. Состояние оборудования" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkEquipmentCondition">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="7. Равномерность обеспечения работой" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkUniformityOfWorkProvision">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="8. Разнообразие работы" VerticalContentAlignment="Center"
+                                   FontWeight="Bold" />
+                            <ListBox
+                                Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
+                                x:Name="RbGoodNoGoodWorkVarietyOfWork">
+                                <ListBoxItem
+                                    Content="Полностью удовлетворен" />
+                                <ListBoxItem
+                                    IsSelected="True"
+                                    Content="Пожалуй, удовлетворен" />
+                                <ListBoxItem
+                                    Content="Трудно сказать" />
+                                <ListBoxItem
+                                    Content="Пожалуй, не удовлетворен" />
+                                <ListBoxItem
+                                    Content="Полностью не удовлетворен" />
+                            </ListBox>
+                        </StackPanel>
+
+                    </StackPanel>
+                </GroupBox>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="btn_write_to_BD" Content="Записать в БД" Width="150" Margin="5,5,5,5"
+                    Template="{DynamicResource btTemplate}" />
+            <Button x:Name="btn_new_anket" Content="Новая анкета" Width="150" Margin="5,5,5,5"
+                    Template="{DynamicResource btTemplate}" />
+            <Button x:Name="btn_close" Content="Закрыть" Width="150" Margin="5,5,5,5" Click="Btn_close_OnClick"
+                    Template="{DynamicResource btTemplate}" />
+        </StackPanel>
     </Grid>
 </Window>

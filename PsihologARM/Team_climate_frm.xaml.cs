@@ -8,5 +8,10 @@ namespace PsihologARM
         {
             InitializeComponent();
         }
+
+        private void Btn_close_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

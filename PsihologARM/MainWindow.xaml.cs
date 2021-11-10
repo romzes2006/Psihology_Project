@@ -194,5 +194,11 @@ namespace PsihologARM
             
             tbl_tests.ItemsSource = table_visualed.DefaultView;
         }
+
+        private void Btn_open_team_climate_form_OnClick(object sender, RoutedEventArgs e)
+        {
+            var climate_window = new Team_climate_frm();
+            climate_window.Show();
+        }
     }
 }

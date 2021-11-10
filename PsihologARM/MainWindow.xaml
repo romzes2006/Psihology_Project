@@ -45,11 +45,13 @@
                         Click="Btn_ResultTest_OnClick" />
                 <Button x:Name="btn_ClearTest" Content="Сбросить" Margin="5,5,5,5" Click="Btn_ClearTest_OnClick"
                         Template="{DynamicResource btTemplate}" />
+                <Button x:Name="btn_open_team_climate_form" Content="Соц. психологический климат" Margin="5,5,5,5" Click="Btn_open_team_climate_form_OnClick"
+                        Template="{DynamicResource btTemplate}" />
             </StackPanel>
             <DataGrid x:Name="tbl_tests" Grid.Column="1" Grid.Row="0" />
 
         </Grid>
-        <Label Content="Многоуровневый личностный опросниик &quot;Адаптивность&quot; " Margin="0,0,0,0"
+        <Label Content="Рабочее место психолога" Margin="0,0,0,0"
                Height="37" Grid.ColumnSpan="2" Style="{DynamicResource Label_Header_style}" />
     </Grid>
 </Window>

@@ -72,6 +72,8 @@
                           Margin="16"
                           materialDesign:ShadowAssist.ShadowDepth="Depth3"
                           BorderThickness="0">
+
+
                     <StackPanel Orientation="Vertical">
                         <RadioButton
                             Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineRadioButton}"
@@ -102,10 +104,46 @@
                     Margin="16"
                     materialDesign:ShadowAssist.ShadowDepth="Depth3"
                     BorderThickness="0">
-                    <StackPanel Orientation="Vertical">
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="1. Размер заработной платы" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Content="1. Размер заработной платы"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="1" Grid.Column="0" Content="2. Социальный пакет"
+                               VerticalContentAlignment="Center" FontWeight="Bold" />
+                        <Label Grid.Row="2" Grid.Column="0" Content="3. Санитарно-гигиенические условия"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="3" Grid.Column="0" Content="4. Отношения с непосредственным руководителем"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="4" Grid.Column="0" Content="5. Отношения в трудовом коллективе"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="5" Grid.Column="0" Content="6. Состояние оборудования"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="6" Grid.Column="0" Content="7. Равномерность обеспечения работой"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+                        <Label Grid.Row="7" Grid.Column="0" Content="8. Разнообразие работы"
+                               VerticalContentAlignment="Center"
+                               FontWeight="Bold" />
+
+                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkZp">
@@ -122,8 +160,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="2. Социальный пакет" VerticalContentAlignment="Center" FontWeight="Bold" />
+                        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkSocialPackage">
@@ -140,9 +177,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="3. Санитарно-гигиенические условия" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkSanitaryAndHygienicConditions">
@@ -159,10 +194,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="4. Отношения с непосредственным руководителем"
-                                   VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkRelationshipWithTheImmediateSupervisor">
@@ -179,9 +211,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="5. Отношения в трудовом коллективе" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkEmployeeRelations">
@@ -198,9 +228,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="6. Состояние оборудования" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkEquipmentCondition">
@@ -217,9 +245,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="7. Равномерность обеспечения работой" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkUniformityOfWorkProvision">
@@ -236,9 +262,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="8. Разнообразие работы" VerticalContentAlignment="Center"
-                                   FontWeight="Bold" />
+                        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal">
                             <ListBox
                                 Style="{StaticResource MaterialDesignChoiceChipPrimaryOutlineListBox}"
                                 x:Name="RbGoodNoGoodWorkVarietyOfWork">
@@ -255,8 +279,7 @@
                                     Content="Полностью не удовлетворен" />
                             </ListBox>
                         </StackPanel>
-
-                    </StackPanel>
+                    </Grid>
                 </GroupBox>
 
             </StackPanel>

@@ -293,7 +293,7 @@
                     Template="{DynamicResource btTemplate}" />
             <Button x:Name="btn_new_anket" Content="Новая анкета" Width="150" Margin="5,5,5,5"
                     Template="{DynamicResource btTemplate}" />
-            <Button x:Name="btn_close" Content="Закрыть" Width="150" Margin="5,5,5,5" Click="Btn_close_OnClick"
+            <Button x:Name="btn_close" Content="Закрыть приложение полностью" Width="270" Margin="5,5,5,5" Click="Btn_close_OnClick"
                     Template="{DynamicResource btTemplate}" />
         </StackPanel>
     </Grid>

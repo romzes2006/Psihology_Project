@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using System.Windows;
 
@@ -12,7 +13,7 @@ namespace PsihologARM
 
         private void Btn_close_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         protected override void OnClosing(CancelEventArgs e)

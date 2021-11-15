@@ -284,7 +284,10 @@
 
             </StackPanel>
         </ScrollViewer>
-
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" Orientation="Horizontal">
+            <Button x:Name="btn_GoBack" Content="&lt;-Назад" Width="150" Margin="5,5,5,5"
+                    Template="{DynamicResource btTemplate}" Click="Btn_GoBack_OnClick"/>
+            </StackPanel>
         <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
             <Button x:Name="btn_write_to_BD" Content="Записать в БД" Width="150" Margin="5,5,5,5"
                     Template="{DynamicResource btTemplate}" />

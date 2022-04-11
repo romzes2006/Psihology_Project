@@ -47,15 +47,21 @@ namespace PsihologARM
         {
             bool validFlag = false;
             int i = 0;
+
+            #region Считываем ответы пользователя
             foreach (DataRow row in table_visualed.Rows)
             {
                 Questions_test_list[i].answer = (bool)row[2];
                 i++;
             }
-
+            #endregion
             switch (selected_test)
             {
                 case "rb_NPU":
+
+                    #region Фактическая работа с тестом НПУ
+                    //TODO Необходимо это перенести куда-то в отдельный обработчик. ему тут не место. Провести переименование класса Results_Interpretation
+                    // в что-то более читаемое.
                     var results_interpretation = new Results_Interpretation(Questions_test_list.ToList());
                     if (!results_interpretation.func_Credibility_test())
                     {
@@ -109,9 +115,12 @@ namespace PsihologARM
                         test_result_window.TextBox_result.Document = flow_result_document;
                         test_result_window.Show();
                     }
-
+                    #endregion
                     break;
                 case "rb_Aizenc":
+
+                    #region Фактическая работа с тестом Айзенка
+                    //TODO Необходимо это перенести куда-то в отдельный обработчик. ему тут не место.
                     var aizenc_test_interpretation = new Aizenc_test_Interpretation(Questions_test_list.ToList());
                     int index_Credibility = 4;
                     aizenc_test_interpretation.func_Credibility_test(ref index_Credibility);
@@ -142,7 +151,7 @@ namespace PsihologARM
                             $"Значение переменной Экстраверсия {extraversion}");
                         // Заглушка...
                     }
-
+                    #endregion
                     break;
             }
         }

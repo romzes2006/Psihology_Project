@@ -1,4 +1,6 @@
 ﻿namespace Shared_lib
+
+    //Модель элемента опросника (номер вопроса, сам вопрос, ответ тестируемого)
 {
     public class QuestionTest
     {

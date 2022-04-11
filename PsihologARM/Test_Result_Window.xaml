@@ -6,21 +6,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:PsihologARM"
         mc:Ignorable="d"
-        Title="Результат тестирования" Height="450" Width="949" MinHeight="450" MinWidth="800" UseLayoutRounding="True">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="1*" />
-        </Grid.RowDefinitions>
-        <Label Content="Фамилия Имя Отчество тестируемого" HorizontalAlignment="Center"
-               Margin="0,0,0,0" VerticalAlignment="Top"
-               FontSize="14" FontStyle="Italic" FontStretch="Normal" Foreground="Brown" Height="37" Grid.ColumnSpan="2" />
-        <Border Grid.Row="1" Margin="10" BorderBrush="Black" BorderThickness="2">
-            <ScrollViewer>
-                <!--<TextBlock x:Name="TextBlock_Result" TextWrapping="Wrap" TextAlignment="Left" Margin="10"
+        Title="Результат тестирования" Height="450" Width="949" MinHeight="450" MinWidth="800" UseLayoutRounding="True"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Style="{StaticResource MaterialDesignWindow}" >
+    
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="1*" />
+    </Grid.RowDefinitions>
+    <Label Content="Фамилия Имя Отчество тестируемого" HorizontalAlignment="Center"
+           Margin="0,0,0,0" VerticalAlignment="Top"
+           FontSize="14" FontStyle="Italic" FontStretch="Normal" Foreground="Brown" Height="37" Grid.ColumnSpan="2" />
+    <Border Grid.Row="1" Margin="10" BorderBrush="Black" BorderThickness="2">
+        <ScrollViewer>
+            <!--<TextBlock x:Name="TextBlock_Result" TextWrapping="Wrap" TextAlignment="Left" Margin="10"
                            Background="White" />-->
-                <RichTextBox x:Name="TextBox_result" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" Margin="2" Background="White"/>
-            </ScrollViewer>
-        </Border>
-    </Grid>
+            <RichTextBox x:Name="TextBox_result" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"
+                         Margin="2" Background="White" />
+        </ScrollViewer>
+    </Border>
+</Grid>
 </Window>

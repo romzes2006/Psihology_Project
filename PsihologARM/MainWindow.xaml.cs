@@ -22,7 +22,7 @@ namespace PsihologARM
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-   public partial class MainWindow : Window
+    public partial class MainWindow : Window
     {
         public ObservableCollection<QuestionTest> Questions_test_list = new ObservableCollection<QuestionTest>();
         public DataTable table_visualed = new DataTable();
@@ -42,22 +42,27 @@ namespace PsihologARM
             selected_test = "rb_NPU";
         }
 
-        
 
         private void Btn_ResultTest_OnClick(object sender, RoutedEventArgs e)
         {
             bool validFlag = false;
             int i = 0;
+
+            #region Считываем ответы пользователя
             foreach (DataRow row in table_visualed.Rows)
             {
-                Questions_test_list[i].answer = (bool) row[2];
+                Questions_test_list[i].answer = (bool)row[2];
                 i++;
             }
-
+            #endregion
             switch (selected_test)
             {
                 case "rb_NPU":
-                   var results_interpretation = new Results_Interpretation(Questions_test_list.ToList());
+
+                    #region Фактическая работа с тестом НПУ
+                    //TODO Необходимо это перенести куда-то в отдельный обработчик. ему тут не место. Провести переименование класса Results_Interpretation
+                    // в что-то более читаемое.
+                    var results_interpretation = new Results_Interpretation(Questions_test_list.ToList());
                     if (!results_interpretation.func_Credibility_test())
                     {
                         MessageBox.Show($"Тест не достоверен");
@@ -70,32 +75,34 @@ namespace PsihologARM
                         string message_temp = "";
 
                         var flow_result_document = new FlowDocument();
-                        
+
                         results_interpretation.func_Interpretation_Adaptive_abilities(ref header_temp,
                             ref message_temp);
                         string result_testing = header_temp + "\n" + message_temp;
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
-                        
-                        results_interpretation.func_Interpretation_Neuropsychological_steadiness(ref header_temp, ref message_temp);
+
+                        results_interpretation.func_Interpretation_Neuropsychological_steadiness(ref header_temp,
+                            ref message_temp);
                         result_testing = header_temp + "\n" + message_temp;
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
-                        
+
                         results_interpretation.func_Interpretation_Communication_features(ref header_temp,
                             ref message_temp);
                         result_testing = header_temp + "\n" + message_temp;
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
-                        
+
                         results_interpretation.func_Interpretation_Moral_normativity(ref header_temp,
                             ref message_temp);
                         result_testing = header_temp + "\n" + message_temp;
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
-                        
+
                         results_interpretation.func_Interpretation_Suicide_risk(ref header_temp, ref message_temp);
                         result_testing = header_temp + "\n" + message_temp;
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
-                        
+
                         result_testing = "Д = " + results_interpretation.Credibility + " АС = " +
-                                         results_interpretation.Adaptive + " ST= " + results_interpretation.stan_Adaptive
+                                         results_interpretation.Adaptive + " ST= " +
+                                         results_interpretation.stan_Adaptive
                                          + " НПУ = " + results_interpretation.Neuropsychological + " ST = " +
                                          results_interpretation.stan_Neuropsychological + "\n КО = " +
                                          results_interpretation.Communication + " ST = " +
@@ -107,11 +114,13 @@ namespace PsihologARM
                         flow_result_document.Blocks.Add(new Paragraph(new Run(result_testing)));
                         test_result_window.TextBox_result.Document = flow_result_document;
                         test_result_window.Show();
-                        
                     }
-
+                    #endregion
                     break;
                 case "rb_Aizenc":
+
+                    #region Фактическая работа с тестом Айзенка
+                    //TODO Необходимо это перенести куда-то в отдельный обработчик. ему тут не место.
                     var aizenc_test_interpretation = new Aizenc_test_Interpretation(Questions_test_list.ToList());
                     int index_Credibility = 4;
                     aizenc_test_interpretation.func_Credibility_test(ref index_Credibility);
@@ -142,7 +151,7 @@ namespace PsihologARM
                             $"Значение переменной Экстраверсия {extraversion}");
                         // Заглушка...
                     }
-
+                    #endregion
                     break;
             }
         }
@@ -191,8 +200,16 @@ namespace PsihologARM
             {
                 MessageBox.Show(err.Message);
             }
-            
+
             tbl_tests.ItemsSource = table_visualed.DefaultView;
+        }
+
+        private void Btn_open_team_climate_form_OnClick(object sender, RoutedEventArgs e)
+        {
+            var climate_window = new Team_climate_frm();
+            climate_window.Owner = this;
+            climate_window.Show();
+            this.Hide();
         }
     }
 }

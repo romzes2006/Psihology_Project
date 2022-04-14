@@ -9,6 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Include="..\.editorconfig" Link=".editorconfig" />
+    </ItemGroup>
+
+    <ItemGroup>
       <None Update="questions.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>

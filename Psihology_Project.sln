@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_Lib", "DB_Lib\DB_Lib.csproj", "{FB6275F6-83EF-45FA-A056-0C18AFEC0BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPsihology", "TestPsihology\TestPsihology.csproj", "{FE324FA2-604E-481F-B6E6-B9C0CD468053}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,11 +42,21 @@ Global
 		{162EECE8-E1C1-4A2B-944C-2D07C321C40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{162EECE8-E1C1-4A2B-944C-2D07C321C40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{162EECE8-E1C1-4A2B-944C-2D07C321C40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB6275F6-83EF-45FA-A056-0C18AFEC0BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6275F6-83EF-45FA-A056-0C18AFEC0BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB6275F6-83EF-45FA-A056-0C18AFEC0BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB6275F6-83EF-45FA-A056-0C18AFEC0BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE324FA2-604E-481F-B6E6-B9C0CD468053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE324FA2-604E-481F-B6E6-B9C0CD468053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE324FA2-604E-481F-B6E6-B9C0CD468053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE324FA2-604E-481F-B6E6-B9C0CD468053}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0816A1F5-1574-4915-9160-BC7D0B7B2C6D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

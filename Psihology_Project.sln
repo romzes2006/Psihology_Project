@@ -1,8 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsihologARM", "PsihologARM\PsihologARM.csproj", "{DC342BD2-1419-454B-8BDF-88AE49BAF5F5}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsihologARM", "PsihologARM\PsihologARM.csproj", "{DC342BD2-1419-454B-8BDF-88AE49BAF5F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared_lib", "Shared_lib\Shared_lib.csproj", "{FC4E6492-C479-45BF-8852-21815764D8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared_lib", "Shared_lib\Shared_lib.csproj", "{FC4E6492-C479-45BF-8852-21815764D8A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_Lib", "DB_Lib\DB_Lib.csproj", "{8EB47ADD-3F9A-45A7-B938-256E56E759D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTestLib", "PTestLib\PTestLib.csproj", "{D5755DB2-90E5-42FF-8317-9593DEAD13E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PArmApp", "PArmApp\PArmApp.csproj", "{23E70352-19BA-484A-ADE6-80CC5D2EBE98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +27,23 @@ Global
 		{FC4E6492-C479-45BF-8852-21815764D8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC4E6492-C479-45BF-8852-21815764D8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC4E6492-C479-45BF-8852-21815764D8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB47ADD-3F9A-45A7-B938-256E56E759D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB47ADD-3F9A-45A7-B938-256E56E759D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB47ADD-3F9A-45A7-B938-256E56E759D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB47ADD-3F9A-45A7-B938-256E56E759D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5755DB2-90E5-42FF-8317-9593DEAD13E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5755DB2-90E5-42FF-8317-9593DEAD13E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5755DB2-90E5-42FF-8317-9593DEAD13E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5755DB2-90E5-42FF-8317-9593DEAD13E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E70352-19BA-484A-ADE6-80CC5D2EBE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E70352-19BA-484A-ADE6-80CC5D2EBE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E70352-19BA-484A-ADE6-80CC5D2EBE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E70352-19BA-484A-ADE6-80CC5D2EBE98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B95B0262-A13C-433C-8311-898F23A073FC}
 	EndGlobalSection
 EndGlobal

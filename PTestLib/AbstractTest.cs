@@ -2,7 +2,9 @@
 {
     public abstract class AbstractTest
     {
-        public void GetAnswers() {}
+        public void GetQuestions() {
+        
+        }
         public void GetJson() {}
         public abstract void GetObject();
         public abstract void GetInterpretation();

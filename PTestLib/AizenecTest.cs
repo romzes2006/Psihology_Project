@@ -12,7 +12,7 @@ namespace PTestLib
         public ListInterpretations Interpritations;
         private byte[] _dostovernost = new byte[] { 6, 24, 36, 12, 18, 30, 42, 48, 54 };
         private byte[] _extraversia = new byte[] { 1, 3, 8, 10, 13, 17, 22, 25, 27, 39, 44, 46, 49, 53, 56, 5, 15, 20, 29, 32, 34, 37, 41, 51 };
-        private byte[] _neirotizm = new byte[] { 2, 4, 7, 9, 11, 14, 16, 19, 21, 23, 26, 28, 31, 33, 35, 38, 40, 43, 45, 47, 50, 52, 55, 57 };
+        private byte[] _neirotizm = new byte[]   { 2, 4, 7, 9, 11, 14, 16, 19, 21, 23, 26, 28, 31, 33, 35, 38, 40, 43, 45, 47, 50, 52, 55, 57 };
 
         public byte dostovernostBal = 0;
         public byte extraversiaBal = 0;
@@ -58,7 +58,7 @@ namespace PTestLib
                 {
                     foreach (var anCl in answersClient)
                     {
-                        if (anCl.Content == answer.Content)
+                        if (anCl.Content.ToString().Contains(answer.Content.ToString()))
                         {
                             correctAnswers.Add(Questions.Get(i).Id);
                         }

@@ -8,6 +8,6 @@ namespace PTestLib
 {
     public abstract class StanBase : AbstractTest
     {
-        public abstract void GetStan();
+        public abstract void GetStan(ListQuestions clientAnswers);
     }
 }

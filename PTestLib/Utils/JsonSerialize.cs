@@ -42,6 +42,11 @@ public struct Question
 public struct ListQuestions
 {
     public List<Question> Questions { get; set; }
+
+    public Question Get(int index)
+    {
+        return Questions[index];
+    }
 }
 public struct Interpretation
 {

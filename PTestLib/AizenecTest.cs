@@ -10,21 +10,13 @@ namespace PTestLib
     {
         public ListQuestions Questions;
         public ListInterpretations Interpritations;
-        private byte[] _dostovernost = new byte[] { 6, 24, 36, 12, 18, 30, 42, 48, 54 };
-        private byte[] _extraversia = new byte[] { 1, 3, 8, 10, 13, 17, 22, 25, 27, 39, 44, 46, 49, 53, 56, 5, 15, 20, 29, 32, 34, 37, 41, 51 };
-        private byte[] _neirotizm = new byte[] { 2, 4, 7, 9, 11, 14, 16, 19, 21, 23, 26, 28, 31, 33, 35, 38, 40, 43, 45, 47, 50, 52, 55, 57 };
+        private byte[] dostovernost = new byte[] { 6, 24, 36, 12, 18, 30, 42, 48, 54 };
+        private byte[] extraversia = new byte[] { 1, 3, 8, 10, 13, 17, 22, 25, 27, 39, 44, 46, 49, 53, 56, 5, 15, 20, 29, 32, 34, 37, 41, 51 };
+        private byte[] neirotizm = new byte[] { 2, 4, 7, 9, 11, 14, 16, 19, 21, 23, 26, 28, 31, 33, 35, 38, 40, 43, 45, 47, 50, 52, 55, 57 };
 
         public byte dostovernostBal = 0;
         public byte extraversiaBal = 0;
         public byte neirotizmBal = 0;
-
-        //private byte[] IscrennostYes = new byte[] { 6, 24, 36 };
-        //private byte[] IscrennostNo = new byte[] { 12, 18, 30, 42, 48, 54 };
-
-        //private byte[] ExtraversiaYes = new byte[] { 1, 3, 8, 10, 13, 17, 22, 25, 27, 39, 44, 46, 49, 53, 56 };
-        //private byte[] ExtraversiaNo = new byte[] { 5, 15, 20, 29, 32, 34, 37, 41, 51 };
-
-        //private byte[] Ystoychivost = new byte[] { 2, 4, 7, 9, 11, 14, 16, 19, 21, 23, 26, 28, 31, 33, 35, 38, 40, 43, 45, 47, 50, 52, 55, 57 };
 
         //Искренность:
         //• Да — 6, 24, 36.
@@ -45,7 +37,7 @@ namespace PTestLib
             Questions = question;
         }
 
-        public List<int> CorrectAnswers(ListQuestions clientAnswers)
+        private List<int> CorrectAnswers(ListQuestions clientAnswers)
         {
             List<int> correctAnswers = new List<int>();
             for (int i = 0; i < clientAnswers.Questions.Count; ++i)
@@ -73,25 +65,25 @@ namespace PTestLib
         {
             List<int> correctAnswers = CorrectAnswers(clientAnswers);
 
-            for (int i = 0; i < _dostovernost.Length; ++i)
+            for (int i = 0; i < dostovernost.Length; ++i)
             {
-                if (correctAnswers.Contains(_dostovernost[i]))
+                if (correctAnswers.Contains(dostovernost[i]))
                 {
                     ++dostovernostBal;
                 }
             }
 
-            for (int i = 0; i < _extraversia.Length; ++i)
+            for (int i = 0; i < extraversia.Length; ++i)
             {
-                if (correctAnswers.Contains(_extraversia[i]))
+                if (correctAnswers.Contains(extraversia[i]))
                 {
                     ++extraversiaBal;
                 }
             }
 
-            for (int i = 0; i < _neirotizm.Length; ++i)
+            for (int i = 0; i < neirotizm.Length; ++i)
             {
-                if (correctAnswers.Contains(_neirotizm[i]))
+                if (correctAnswers.Contains(neirotizm[i]))
                 {
                     ++neirotizmBal;
                 }

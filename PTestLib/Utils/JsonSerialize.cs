@@ -52,7 +52,3 @@ public struct ListInterpretations
 {
     public List<Interpretation> Interpretations { get; set; }
 }
-
-
-
-

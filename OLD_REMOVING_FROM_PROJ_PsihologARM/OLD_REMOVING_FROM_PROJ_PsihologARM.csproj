@@ -6,6 +6,7 @@
         <ApplicationIcon>Test_icon.ico</ApplicationIcon>
         <LangVersion>10</LangVersion>
         <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNamespace>PsihologARM</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Shared_lib\Shared_lib.csproj" />
+      <ProjectReference Include="..\OLD_REMOVING_FROM_PROJ_Shared_lib\OLD_REMOVING_FROM_PROJ_Shared_lib.csproj" />
     </ItemGroup>
 
     <ItemGroup>
